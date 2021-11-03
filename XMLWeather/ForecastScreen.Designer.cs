@@ -53,6 +53,13 @@
             this.max6 = new System.Windows.Forms.Label();
             this.cityInput = new System.Windows.Forms.TextBox();
             this.searchInput = new System.Windows.Forms.Button();
+            this.type6 = new System.Windows.Forms.Label();
+            this.type5 = new System.Windows.Forms.Label();
+            this.type4 = new System.Windows.Forms.Label();
+            this.type3 = new System.Windows.Forms.Label();
+            this.type2 = new System.Windows.Forms.Label();
+            this.type1 = new System.Windows.Forms.Label();
+            this.weatherLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // forecastLabel
@@ -83,7 +90,7 @@
             this.min1.BackColor = System.Drawing.Color.Transparent;
             this.min1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.min1.ForeColor = System.Drawing.Color.DarkBlue;
-            this.min1.Location = new System.Drawing.Point(164, 106);
+            this.min1.Location = new System.Drawing.Point(144, 104);
             this.min1.Name = "min1";
             this.min1.Size = new System.Drawing.Size(41, 20);
             this.min1.TabIndex = 48;
@@ -94,7 +101,7 @@
             this.max1.BackColor = System.Drawing.Color.Transparent;
             this.max1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.max1.ForeColor = System.Drawing.Color.DarkRed;
-            this.max1.Location = new System.Drawing.Point(107, 106);
+            this.max1.Location = new System.Drawing.Point(87, 104);
             this.max1.Name = "max1";
             this.max1.Size = new System.Drawing.Size(41, 20);
             this.max1.TabIndex = 45;
@@ -116,7 +123,7 @@
             this.date1.BackColor = System.Drawing.Color.Transparent;
             this.date1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date1.ForeColor = System.Drawing.Color.Black;
-            this.date1.Location = new System.Drawing.Point(10, 106);
+            this.date1.Location = new System.Drawing.Point(3, 105);
             this.date1.Name = "date1";
             this.date1.Size = new System.Drawing.Size(75, 20);
             this.date1.TabIndex = 64;
@@ -128,7 +135,7 @@
             this.date2.BackColor = System.Drawing.Color.Transparent;
             this.date2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date2.ForeColor = System.Drawing.Color.Black;
-            this.date2.Location = new System.Drawing.Point(10, 136);
+            this.date2.Location = new System.Drawing.Point(3, 135);
             this.date2.Name = "date2";
             this.date2.Size = new System.Drawing.Size(75, 20);
             this.date2.TabIndex = 69;
@@ -140,7 +147,7 @@
             this.min2.BackColor = System.Drawing.Color.Transparent;
             this.min2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.min2.ForeColor = System.Drawing.Color.DarkBlue;
-            this.min2.Location = new System.Drawing.Point(164, 136);
+            this.min2.Location = new System.Drawing.Point(144, 134);
             this.min2.Name = "min2";
             this.min2.Size = new System.Drawing.Size(41, 20);
             this.min2.TabIndex = 68;
@@ -151,7 +158,7 @@
             this.max2.BackColor = System.Drawing.Color.Transparent;
             this.max2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.max2.ForeColor = System.Drawing.Color.DarkRed;
-            this.max2.Location = new System.Drawing.Point(107, 136);
+            this.max2.Location = new System.Drawing.Point(87, 134);
             this.max2.Name = "max2";
             this.max2.Size = new System.Drawing.Size(41, 20);
             this.max2.TabIndex = 66;
@@ -161,7 +168,7 @@
             // 
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.ForeColor = System.Drawing.Color.Black;
-            this.label4.Location = new System.Drawing.Point(164, 64);
+            this.label4.Location = new System.Drawing.Point(144, 62);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 15);
             this.label4.TabIndex = 67;
@@ -172,7 +179,7 @@
             // 
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(107, 64);
+            this.label7.Location = new System.Drawing.Point(87, 62);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(41, 15);
             this.label7.TabIndex = 65;
@@ -184,7 +191,7 @@
             this.date3.BackColor = System.Drawing.Color.Transparent;
             this.date3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date3.ForeColor = System.Drawing.Color.Black;
-            this.date3.Location = new System.Drawing.Point(10, 166);
+            this.date3.Location = new System.Drawing.Point(3, 165);
             this.date3.Name = "date3";
             this.date3.Size = new System.Drawing.Size(75, 20);
             this.date3.TabIndex = 72;
@@ -196,7 +203,7 @@
             this.min3.BackColor = System.Drawing.Color.Transparent;
             this.min3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.min3.ForeColor = System.Drawing.Color.DarkBlue;
-            this.min3.Location = new System.Drawing.Point(164, 166);
+            this.min3.Location = new System.Drawing.Point(144, 164);
             this.min3.Name = "min3";
             this.min3.Size = new System.Drawing.Size(41, 20);
             this.min3.TabIndex = 71;
@@ -207,7 +214,7 @@
             this.max3.BackColor = System.Drawing.Color.Transparent;
             this.max3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.max3.ForeColor = System.Drawing.Color.DarkRed;
-            this.max3.Location = new System.Drawing.Point(107, 166);
+            this.max3.Location = new System.Drawing.Point(87, 164);
             this.max3.Name = "max3";
             this.max3.Size = new System.Drawing.Size(41, 20);
             this.max3.TabIndex = 70;
@@ -218,7 +225,7 @@
             this.date4.BackColor = System.Drawing.Color.Transparent;
             this.date4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date4.ForeColor = System.Drawing.Color.Black;
-            this.date4.Location = new System.Drawing.Point(10, 196);
+            this.date4.Location = new System.Drawing.Point(3, 195);
             this.date4.Name = "date4";
             this.date4.Size = new System.Drawing.Size(75, 20);
             this.date4.TabIndex = 75;
@@ -230,7 +237,7 @@
             this.min4.BackColor = System.Drawing.Color.Transparent;
             this.min4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.min4.ForeColor = System.Drawing.Color.DarkBlue;
-            this.min4.Location = new System.Drawing.Point(164, 196);
+            this.min4.Location = new System.Drawing.Point(144, 194);
             this.min4.Name = "min4";
             this.min4.Size = new System.Drawing.Size(41, 20);
             this.min4.TabIndex = 74;
@@ -241,7 +248,7 @@
             this.max4.BackColor = System.Drawing.Color.Transparent;
             this.max4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.max4.ForeColor = System.Drawing.Color.DarkRed;
-            this.max4.Location = new System.Drawing.Point(107, 196);
+            this.max4.Location = new System.Drawing.Point(87, 194);
             this.max4.Name = "max4";
             this.max4.Size = new System.Drawing.Size(41, 20);
             this.max4.TabIndex = 73;
@@ -252,7 +259,7 @@
             this.date5.BackColor = System.Drawing.Color.Transparent;
             this.date5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date5.ForeColor = System.Drawing.Color.Black;
-            this.date5.Location = new System.Drawing.Point(10, 226);
+            this.date5.Location = new System.Drawing.Point(3, 225);
             this.date5.Name = "date5";
             this.date5.Size = new System.Drawing.Size(75, 20);
             this.date5.TabIndex = 78;
@@ -264,7 +271,7 @@
             this.min5.BackColor = System.Drawing.Color.Transparent;
             this.min5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.min5.ForeColor = System.Drawing.Color.DarkBlue;
-            this.min5.Location = new System.Drawing.Point(164, 226);
+            this.min5.Location = new System.Drawing.Point(144, 224);
             this.min5.Name = "min5";
             this.min5.Size = new System.Drawing.Size(41, 20);
             this.min5.TabIndex = 77;
@@ -275,7 +282,7 @@
             this.max5.BackColor = System.Drawing.Color.Transparent;
             this.max5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.max5.ForeColor = System.Drawing.Color.DarkRed;
-            this.max5.Location = new System.Drawing.Point(107, 226);
+            this.max5.Location = new System.Drawing.Point(87, 224);
             this.max5.Name = "max5";
             this.max5.Size = new System.Drawing.Size(41, 20);
             this.max5.TabIndex = 76;
@@ -286,7 +293,7 @@
             this.date6.BackColor = System.Drawing.Color.Transparent;
             this.date6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.date6.ForeColor = System.Drawing.Color.Black;
-            this.date6.Location = new System.Drawing.Point(10, 256);
+            this.date6.Location = new System.Drawing.Point(3, 255);
             this.date6.Name = "date6";
             this.date6.Size = new System.Drawing.Size(75, 20);
             this.date6.TabIndex = 81;
@@ -298,7 +305,7 @@
             this.min6.BackColor = System.Drawing.Color.Transparent;
             this.min6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.min6.ForeColor = System.Drawing.Color.DarkBlue;
-            this.min6.Location = new System.Drawing.Point(164, 256);
+            this.min6.Location = new System.Drawing.Point(144, 254);
             this.min6.Name = "min6";
             this.min6.Size = new System.Drawing.Size(41, 20);
             this.min6.TabIndex = 80;
@@ -309,7 +316,7 @@
             this.max6.BackColor = System.Drawing.Color.Transparent;
             this.max6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.max6.ForeColor = System.Drawing.Color.DarkRed;
-            this.max6.Location = new System.Drawing.Point(107, 256);
+            this.max6.Location = new System.Drawing.Point(87, 254);
             this.max6.Name = "max6";
             this.max6.Size = new System.Drawing.Size(41, 20);
             this.max6.TabIndex = 79;
@@ -332,11 +339,95 @@
             this.searchInput.UseVisualStyleBackColor = true;
             this.searchInput.Click += new System.EventHandler(this.searchInput_Click);
             // 
+            // type6
+            // 
+            this.type6.BackColor = System.Drawing.Color.Transparent;
+            this.type6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.type6.ForeColor = System.Drawing.Color.DarkBlue;
+            this.type6.Location = new System.Drawing.Point(203, 254);
+            this.type6.Name = "type6";
+            this.type6.Size = new System.Drawing.Size(41, 20);
+            this.type6.TabIndex = 89;
+            this.type6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // type5
+            // 
+            this.type5.BackColor = System.Drawing.Color.Transparent;
+            this.type5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.type5.ForeColor = System.Drawing.Color.DarkBlue;
+            this.type5.Location = new System.Drawing.Point(203, 224);
+            this.type5.Name = "type5";
+            this.type5.Size = new System.Drawing.Size(41, 20);
+            this.type5.TabIndex = 88;
+            this.type5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // type4
+            // 
+            this.type4.BackColor = System.Drawing.Color.Transparent;
+            this.type4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.type4.ForeColor = System.Drawing.Color.DarkBlue;
+            this.type4.Location = new System.Drawing.Point(203, 194);
+            this.type4.Name = "type4";
+            this.type4.Size = new System.Drawing.Size(41, 20);
+            this.type4.TabIndex = 87;
+            this.type4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // type3
+            // 
+            this.type3.BackColor = System.Drawing.Color.Transparent;
+            this.type3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.type3.ForeColor = System.Drawing.Color.DarkBlue;
+            this.type3.Location = new System.Drawing.Point(203, 164);
+            this.type3.Name = "type3";
+            this.type3.Size = new System.Drawing.Size(41, 20);
+            this.type3.TabIndex = 86;
+            this.type3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // type2
+            // 
+            this.type2.BackColor = System.Drawing.Color.Transparent;
+            this.type2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.type2.ForeColor = System.Drawing.Color.DarkBlue;
+            this.type2.Location = new System.Drawing.Point(203, 134);
+            this.type2.Name = "type2";
+            this.type2.Size = new System.Drawing.Size(41, 20);
+            this.type2.TabIndex = 85;
+            this.type2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // type1
+            // 
+            this.type1.BackColor = System.Drawing.Color.Transparent;
+            this.type1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.type1.ForeColor = System.Drawing.Color.DarkBlue;
+            this.type1.Location = new System.Drawing.Point(203, 104);
+            this.type1.Name = "type1";
+            this.type1.Size = new System.Drawing.Size(41, 20);
+            this.type1.TabIndex = 84;
+            this.type1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // weatherLabel
+            // 
+            this.weatherLabel.BackColor = System.Drawing.Color.Transparent;
+            this.weatherLabel.ForeColor = System.Drawing.Color.Black;
+            this.weatherLabel.Location = new System.Drawing.Point(191, 62);
+            this.weatherLabel.Name = "weatherLabel";
+            this.weatherLabel.Size = new System.Drawing.Size(53, 15);
+            this.weatherLabel.TabIndex = 90;
+            this.weatherLabel.Text = "Weather";
+            this.weatherLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // ForecastScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Controls.Add(this.weatherLabel);
+            this.Controls.Add(this.type6);
+            this.Controls.Add(this.type5);
+            this.Controls.Add(this.type4);
+            this.Controls.Add(this.type3);
+            this.Controls.Add(this.type2);
+            this.Controls.Add(this.type1);
             this.Controls.Add(this.searchInput);
             this.Controls.Add(this.cityInput);
             this.Controls.Add(this.date6);
@@ -396,5 +487,12 @@
         private System.Windows.Forms.Label max6;
         private System.Windows.Forms.TextBox cityInput;
         private System.Windows.Forms.Button searchInput;
+        private System.Windows.Forms.Label type6;
+        private System.Windows.Forms.Label type5;
+        private System.Windows.Forms.Label type4;
+        private System.Windows.Forms.Label type3;
+        private System.Windows.Forms.Label type2;
+        private System.Windows.Forms.Label type1;
+        private System.Windows.Forms.Label weatherLabel;
     }
 }

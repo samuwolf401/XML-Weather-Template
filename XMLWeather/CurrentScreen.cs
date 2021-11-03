@@ -20,12 +20,17 @@ namespace XMLWeather
 
         public void DisplayCurrent()
         {
+            //display informatio
             tempLabel.Text = $"{Form1.days[0].currentTemp}C°";
             minOutput.Text = $"{Form1.days[0].tempLow}C°";
             maxOutput.Text = $"{Form1.days[0].tempHigh}C°";
             dateLabel.Text = $"{DateTime.Now.DayOfWeek}" + " The " + $"{DateTime.Now.Day}";
             yearLabel.Text = $"{DateTime.Now.Month}" + " / " + $"{DateTime.Now.Year}";
             weatherOutput.Text = $"{Form1.days[0].condition}";
+            windSpeedOutput.Text = $"{Form1.days[0].windSpeed} m/s";
+            windDirOutput.Text = $"{Form1.days[0].windDirection}";
+            
+            //change colour
             if (Form1.days[0].code > 800)
             {
                 this.BackColor = Color.DimGray;
@@ -59,9 +64,18 @@ namespace XMLWeather
 
         private void searchInput_Click(object sender, EventArgs e)
         {
-            Form1.city = cityInput.Text;
-            Form1.ExtractCurrent();
-            DisplayCurrent();
+            try
+            {
+                //search for a city, then find the information, and display the info
+                Form1.city = cityInput.Text;
+                Form1.ExtractCurrent();
+                DisplayCurrent();
+            }
+            catch
+            {
+                cityInput.Text = "error";
+            }
+
         }
     }
 }

@@ -41,6 +41,9 @@
             this.cityInput = new System.Windows.Forms.TextBox();
             this.searchInput = new System.Windows.Forms.Button();
             this.weatherOutput = new System.Windows.Forms.Label();
+            this.windSpeedOutput = new System.Windows.Forms.Label();
+            this.windDirOutput = new System.Windows.Forms.Label();
+            this.windLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cityOutput
@@ -60,7 +63,7 @@
             this.maxOutput.BackColor = System.Drawing.Color.Transparent;
             this.maxOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maxOutput.ForeColor = System.Drawing.Color.DarkRed;
-            this.maxOutput.Location = new System.Drawing.Point(159, 169);
+            this.maxOutput.Location = new System.Drawing.Point(161, 180);
             this.maxOutput.Name = "maxOutput";
             this.maxOutput.Size = new System.Drawing.Size(52, 25);
             this.maxOutput.TabIndex = 32;
@@ -71,7 +74,7 @@
             this.minOutput.BackColor = System.Drawing.Color.Transparent;
             this.minOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minOutput.ForeColor = System.Drawing.Color.DarkBlue;
-            this.minOutput.Location = new System.Drawing.Point(31, 168);
+            this.minOutput.Location = new System.Drawing.Point(33, 179);
             this.minOutput.Name = "minOutput";
             this.minOutput.Size = new System.Drawing.Size(52, 26);
             this.minOutput.TabIndex = 30;
@@ -82,7 +85,7 @@
             this.tempLabel.BackColor = System.Drawing.Color.Transparent;
             this.tempLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tempLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.tempLabel.Location = new System.Drawing.Point(3, 101);
+            this.tempLabel.Location = new System.Drawing.Point(5, 125);
             this.tempLabel.Name = "tempLabel";
             this.tempLabel.Size = new System.Drawing.Size(238, 45);
             this.tempLabel.TabIndex = 26;
@@ -127,7 +130,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(-3, 203);
+            this.label2.Location = new System.Drawing.Point(-9, 205);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(259, 13);
             this.label2.TabIndex = 44;
@@ -139,7 +142,7 @@
             this.dateLabel.BackColor = System.Drawing.Color.Transparent;
             this.dateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.dateLabel.Location = new System.Drawing.Point(20, 231);
+            this.dateLabel.Location = new System.Drawing.Point(20, 102);
             this.dateLabel.Name = "dateLabel";
             this.dateLabel.Size = new System.Drawing.Size(95, 23);
             this.dateLabel.TabIndex = 45;
@@ -151,7 +154,7 @@
             this.yearLabel.BackColor = System.Drawing.Color.Transparent;
             this.yearLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.yearLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.yearLabel.Location = new System.Drawing.Point(129, 231);
+            this.yearLabel.Location = new System.Drawing.Point(129, 102);
             this.yearLabel.Name = "yearLabel";
             this.yearLabel.Size = new System.Drawing.Size(95, 23);
             this.yearLabel.TabIndex = 46;
@@ -180,18 +183,57 @@
             this.weatherOutput.BackColor = System.Drawing.Color.Transparent;
             this.weatherOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.weatherOutput.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.weatherOutput.Location = new System.Drawing.Point(4, 287);
+            this.weatherOutput.Location = new System.Drawing.Point(3, 227);
             this.weatherOutput.Name = "weatherOutput";
             this.weatherOutput.Size = new System.Drawing.Size(237, 23);
             this.weatherOutput.TabIndex = 49;
             this.weatherOutput.Text = "Weather";
             this.weatherOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // windSpeedOutput
+            // 
+            this.windSpeedOutput.BackColor = System.Drawing.Color.Transparent;
+            this.windSpeedOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.windSpeedOutput.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.windSpeedOutput.Location = new System.Drawing.Point(3, 290);
+            this.windSpeedOutput.Name = "windSpeedOutput";
+            this.windSpeedOutput.Size = new System.Drawing.Size(237, 23);
+            this.windSpeedOutput.TabIndex = 50;
+            this.windSpeedOutput.Text = "Windspeed";
+            this.windSpeedOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // windDirOutput
+            // 
+            this.windDirOutput.BackColor = System.Drawing.Color.Transparent;
+            this.windDirOutput.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.windDirOutput.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.windDirOutput.Location = new System.Drawing.Point(3, 313);
+            this.windDirOutput.Name = "windDirOutput";
+            this.windDirOutput.Size = new System.Drawing.Size(237, 23);
+            this.windDirOutput.TabIndex = 51;
+            this.windDirOutput.Text = "WindDir";
+            this.windDirOutput.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // windLabel
+            // 
+            this.windLabel.BackColor = System.Drawing.Color.Transparent;
+            this.windLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.windLabel.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.windLabel.Location = new System.Drawing.Point(3, 267);
+            this.windLabel.Name = "windLabel";
+            this.windLabel.Size = new System.Drawing.Size(237, 23);
+            this.windLabel.TabIndex = 52;
+            this.windLabel.Text = "Wind";
+            this.windLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // CurrentScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Controls.Add(this.windLabel);
+            this.Controls.Add(this.windDirOutput);
+            this.Controls.Add(this.windSpeedOutput);
             this.Controls.Add(this.weatherOutput);
             this.Controls.Add(this.searchInput);
             this.Controls.Add(this.cityInput);
@@ -226,5 +268,8 @@
         private System.Windows.Forms.TextBox cityInput;
         private System.Windows.Forms.Button searchInput;
         private System.Windows.Forms.Label weatherOutput;
+        private System.Windows.Forms.Label windSpeedOutput;
+        private System.Windows.Forms.Label windDirOutput;
+        private System.Windows.Forms.Label windLabel;
     }
 }
