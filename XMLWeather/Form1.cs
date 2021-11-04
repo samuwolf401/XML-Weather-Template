@@ -1,4 +1,8 @@
-﻿using System;
+﻿///Sam Wolfgram
+///Weather App
+///Nov 3 2021
+///An app that tracks the temperature and weather from an API database
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
